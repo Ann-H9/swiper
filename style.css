@@ -91,7 +91,7 @@ body > main > div.swiper-container.swiper-initialized.swiper-horizontal > div.sw
   padding-bottom: 20px;
 }
 
- @media (min-width: 1120px) {
+ @media (min-width: 768px) {
   body { 
     min-width: 1120px;
  }
@@ -106,7 +106,7 @@ body > main > div.swiper-container.swiper-initialized.swiper-horizontal > div.sw
 .brands {
  margin: 0;
  display: grid;
- grid-template-columns: repeat(4, minmax(0, 1fr));
+ grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .brands__button:hover {
@@ -135,4 +135,13 @@ border: none;
 .hidden {
   display: none;
 }
+}
+
+@media (min-width: 1120px) {
+  .brands {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+   }
+   
 }
