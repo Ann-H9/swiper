@@ -1,0 +1,138 @@
+* {
+    font: inherit;
+} 
+
+@font-face {
+    font-family: "TT-Lakes";
+    src: 
+      local("TT-Lakes"),
+      url("fonts/TTLakes-ExtraLight.woff") format("woff");
+    font-weight: 100;
+  }  
+@font-face {
+    font-family: "TT-Lakes";
+    src: 
+      local("TT-Lakes"),
+      url("fonts/TTLakes-Regular.woff") format("woff");
+    font-weight: 400;
+  }
+ 
+  body { 
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-family: "TT-Lakes", sans-serif;
+}
+
+.header {
+  height: 80px;
+  background: linear-gradient(to right, #F8F8F8 10%, #FFFFFF 60%);
+}
+.header__title {
+  margin: 0;
+  padding: 20px 40px;
+  font-size: 16px;
+  font-weight: 100;
+}
+.main {
+  
+  background-color: #F8F8F8;
+} 
+.swiper-container {
+  display: block;
+}
+.desktop {
+  display: none;
+}
+.brands {
+  list-style: none;
+}
+.brands__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 224px;
+  height: 72px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #EAEAEA;
+}
+.brands__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 224px;
+  height: 72px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #EAEAEA;
+}
+.brands__item-img {
+  margin-left: 15px;
+}
+.brands__button {
+  padding: 0;
+  margin: 15px 10px;
+  width: 40px;
+  height: 40px;
+  background: url(ic/go.svg) no-repeat ;
+  border: none;
+}
+
+.swiper-slide-active {
+padding-left: 16px;
+}
+
+body > main > div.swiper-container.swiper-initialized.swiper-horizontal > div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: sticky;
+  top: 20px;
+  padding-bottom: 20px;
+}
+
+ @media (min-width: 1120px) {
+  body { 
+    min-width: 1120px;
+ }
+ .desktop {
+  display: block;
+}
+
+.header {
+  height: 56px;
+}
+
+.brands {
+ margin: 0;
+ display: grid;
+ grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.brands__button:hover {
+ transform: rotate(360deg) scale(1.2);
+ transition: ease 2s;
+ cursor: pointer;
+}
+
+.main__button {
+margin: 30px 40px;
+padding-left: 30px;
+background: url(ic/expand.svg) no-repeat left;
+border: none;
+}
+
+.main__button:hover {
+  transform: scale(1.05);
+  transition: ease 1s;
+  cursor: pointer;
+}
+
+.swiper-container {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+}
