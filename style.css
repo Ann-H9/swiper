@@ -93,7 +93,7 @@ body > main > div.swiper-container.swiper-initialized.swiper-horizontal > div.sw
 
  @media (min-width: 768px) {
   body { 
-    min-width: 1120px;
+    min-width: 768px;
  }
  .desktop {
   display: block;
